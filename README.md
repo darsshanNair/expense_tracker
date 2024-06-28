@@ -1,3 +1,30 @@
+# Expense Tracker API
+
+## Project Description
+
+The Expense Tracker API is a sample project designed to demonstrate a well-structured, scalable, and maintainable architecture for ExpressJS applications. This project provides a solid foundation for building small-to-medium scale projects, with a focus on adhering to SOLID principles and best practices in ExpressJS. The application simulates basic functionalities of a banking domain, including user registration, login, and expense management.
+
+## Architectural Pattern and Code Structure
+
+### Architecture
+
+This project follows a layered architecture pattern, which includes the following layers:
+
+- **Controller Layer**: Handles incoming HTTP requests and returns HTTP responses. It coordinates with the service layer to fulfill the requests.
+- **Service Layer**: Contains the business logic of the application. It processes the input from the controllers, applies business rules, and calls the repository layer.
+- **Repository Layer**: Responsible for database interactions. It provides an abstraction over the database operations.
+- **Provider Layer**: Handles external API calls and interactions with other services. Currently, it's a placeholder for future extensions.
+- **Middleware Layer**: Manages request validation, authentication, and other cross-cutting concerns.
+
+### Tools and Libraries
+
+- **TypeScript**: Provides static typing, which helps in catching errors early and improving code quality.
+- **ExpressJS**: A minimal and flexible Node.js web application framework that provides a robust set of features to build web and mobile applications.
+- **InversifyJS**: A powerful and lightweight inversion of control (IoC) container for JavaScript & Node.js apps powered by TypeScript.
+- **express-validator**: A library for validating and sanitizing user inputs.
+- **jsonwebtoken**: Used for generating and verifying JSON Web Tokens (JWT) for authentication.
+- **bcrypt**: A library to help hash passwords.
+
 
 ## Running the Project
 
