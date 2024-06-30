@@ -26,6 +26,39 @@ This project follows a layered architecture pattern, which includes the followin
 - **bcrypt**: A library to help hash passwords.
 
 
+# Project Structure
+
+```
+src/
+├── config/
+│   └── inversify.config.ts       # InversifyJS configuration and bindings
+├── controllers/
+│   ├── user.controller.ts        # User-related endpoints
+│   └── expense.controller.ts     # Expense-related endpoints
+├── interfaces/
+│   ├── user-repository.interface.ts # User repository interface
+│   ├── user-service.interface.ts    # User service interface
+│   ├── expense-repository.interface.ts # Expense repository interface
+│   ├── expense-service.interface.ts    # Expense service interface
+├── middlewares/
+│   └── auth.middleware.ts        # Authentication middleware
+├── models/
+│   ├── user.ts                   # User model
+│   └── expense.ts                # Expense model
+├── repositories/
+│   ├── user.repository.ts        # User repository implementation
+│   └── expense.repository.ts     # Expense repository implementation
+├── services/
+│   ├── user.service.ts           # User service implementation
+│   └── expense.service.ts        # Expense service implementation
+├── types/
+│   └── types.ts                  # Dependency injection types
+├── app.ts                        # Express app setup
+└── server.ts                     # Server setup and entry point
+```
+
+
+
 ## Running the Project
 
 1. **Clone the repository**:
